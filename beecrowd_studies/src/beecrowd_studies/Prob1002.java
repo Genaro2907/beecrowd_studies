@@ -3,18 +3,18 @@ package beecrowd_studies;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Prob1001 {
+public class Prob1002 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);		
 		Scanner sc = new Scanner(System.in);
 		
-		 int a = sc.nextInt();
-		 int b = sc.nextInt();
+		 double n = sc.nextDouble();
+		 double pi = 3.14159;
 		 
-		 double x =  a + b;
+		 double a = pi * n * n;
 		 
-		 System.out.println("X = " + x );
+		 System.out.printf("A=%.4f%n", a );
 		
 		sc.close();
 
