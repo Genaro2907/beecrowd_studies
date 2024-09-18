@@ -9,23 +9,13 @@ public class Prob1010 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int id = sc.nextInt();
-		int qtd = sc.nextInt();
-		double valor = sc.nextDouble();
+		int r = sc.nextInt();
 		
+		double pi = 3.14159;
 		
-		int id2 = sc.nextInt();
-		int qtd2 = sc.nextInt();
-		double valor2 = sc.nextDouble();
+		double volume = (4/3.0) * pi * r * r * r;
 		
-		double soma = (qtd * valor) + (qtd2 * valor2);
-		
-		System.out.printf("VALOR A PAGAR: R$ %.2f%n" , soma , id , id2);
-		
-		
-		
-		
-		
+		System.out.printf("VOLUME = %.3f", volume);
 		
 		sc.close();
 
