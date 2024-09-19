@@ -15,7 +15,7 @@ public class Prob1010 {
 		
 		double volume = (4/3.0) * pi * r * r * r;
 		
-		System.out.printf("VOLUME = %.3f", volume);
+		System.out.printf("VOLUME = %.3f%n", volume);
 		
 		sc.close();
 
