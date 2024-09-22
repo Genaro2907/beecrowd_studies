@@ -20,6 +20,8 @@ public class Prob1014 {
 		
 		
 		sc.close();
+		
+
 
 	}
 
