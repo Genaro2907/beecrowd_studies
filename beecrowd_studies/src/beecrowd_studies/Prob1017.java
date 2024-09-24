@@ -1,25 +1,39 @@
 package beecrowd_studies;
 
-import java.util.Locale;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Prob1017 {
 
-	public static void main(String[] args) {
-		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
-		
-		double porhour = 12.0;
-		int x = sc.nextInt();
-		int y = sc.nextInt();
-		
-		double combustivel = (x * y) / porhour;
-		
-		System.out.println(String.format("%.3f", combustivel));
-		
-		
-		sc.close();
-
-	}
+	public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int notasInseridas = sc.nextInt();
+        int atual = notasInseridas;
+        int notas100 = atual / 100;
+        atual -= notas100 * 100;
+        int notas50 = atual / 50;
+        atual -= notas50 * 50;
+        int notas20 = atual / 20;
+        atual -= notas20 * 20;
+        int notas10 = atual / 10;
+        atual -= notas10 * 10;
+        int notas5 = atual / 5;
+        atual -= notas5 * 5;
+        int notas2 = atual / 2;
+        atual -= notas2 * 2;
+        int notas1 = atual;
+        
+        System.out.println(notasInseridas);
+        System.out.println(notas100 + " nota(s) de R$ 100,00");
+        System.out.println(notas50 + " nota(s) de R$ 50,00");
+        System.out.println(notas20 + " nota(s) de R$ 20,00");
+        System.out.println(notas10 + " nota(s) de R$ 10,00");
+        System.out.println(notas5 + " nota(s) de R$ 5,00");
+        System.out.println(notas2 + " nota(s) de R$ 2,00");
+        System.out.println(notas1 + " nota(s) de R$ 1,00");
+        
+        sc.close();
+        
+    }
 
 }
