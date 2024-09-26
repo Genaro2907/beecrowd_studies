@@ -9,14 +9,12 @@ public class Prob1019 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double porhour = 12.0;
-		int x = sc.nextInt();
-		int y = sc.nextInt();
-		
-		double combustivel = (x * y) / porhour;
-		
-		System.out.println(String.format("%.3f", combustivel));
-		
+		int N, horas, minutos, segundos;
+		N = sc.nextInt();
+		horas = N / 3600;
+		minutos = (N % 3600) / 60;
+		segundos = (N % 3600) % 60;
+		System.out.println(horas + ":" + minutos + ":" + segundos);
 		
 		sc.close();
 
