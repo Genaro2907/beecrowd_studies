@@ -3,7 +3,7 @@ package beecrowd_studies;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Prob1022 {
+public class Prob1035 {
 
 	public static void main(String[] args) throws IOException {
 		Scanner sc = new Scanner(System.in);
@@ -25,5 +25,4 @@ public class Prob1022 {
 		
 		sc.close();
 	}
-
 }
