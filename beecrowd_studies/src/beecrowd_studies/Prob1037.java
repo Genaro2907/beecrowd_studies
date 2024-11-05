@@ -25,5 +25,4 @@ public class Prob1037 {
 		sc.close();
 
 	}
-
 }
