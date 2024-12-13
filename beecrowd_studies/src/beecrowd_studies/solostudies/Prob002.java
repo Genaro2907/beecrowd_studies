@@ -12,7 +12,6 @@ public class Prob002 {
         nomes = nomes.trim().toLowerCase();
         char[] caracteres = nomes.toCharArray();
 
-        // Inverter a string
         String nomeInvertido = "";
         for (int i = caracteres.length - 1; i >= 0; i--) {
             nomeInvertido += caracteres[i];
